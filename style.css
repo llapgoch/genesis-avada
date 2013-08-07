@@ -1,0 +1,170 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for the Avada
+Author: Your name here
+Template: Avada
+*/
+
+@import url("../Avada/style.css");
+
+.progress-page-content{
+	margin:30px 0;
+}
+
+.progress-page-content .reading-box{
+	margin-bottom:40px;
+}
+
+.input-form .question-container{
+	padding-bottom:60px;
+	padding-left:4px;
+	overflow:hidden;
+}
+
+.input-form .title{
+	margin-bottom:0;
+}
+
+.input-form label{
+	display:block;
+	font-size:22px;
+	line-height:normal;
+	text-align:left;
+	white-space:nowrap;
+	margin-right:10px;
+	margin-bottom:5px;
+	color:#333333;
+}
+
+input.general-input{
+	padding:10px;
+	width:200px;
+	border:1px solid #cccccc;
+	border-radius:10px;
+	clear:both;
+}
+
+.input-form select{
+	width:220px;
+	height:27px;
+	border: 1px solid #aaa;
+}
+
+button.saveform{
+	display:block;
+}
+
+button.changeunits{
+	height:27px;
+}
+
+.hidden{
+	display:none !important;
+}
+
+input.weight-input{
+	width:100px;
+}
+
+.input-wrapper{
+	float:left;
+	position:relative;
+	zoom:1;
+}
+
+.form-explanation{
+	background:#fff4f4;
+	padding:6px;
+	margin-bottom:6px;
+	border-radius:5px;
+}
+
+.form-explanation em{
+	display:block;
+	padding-top:10px;
+	font-weight:bold;
+}
+
+.input-form .input-suffix{
+	display:inline;
+	margin:0 10px 0 5px;
+}
+
+.input-form button.large{
+	width:85%;
+	font-size:24px;
+}
+
+.button-c-container{
+	text-align:center;
+}
+
+.button-c-container button{
+	display:inline-block;
+}
+
+.no-comments{
+	display:none;
+}
+
+.form-input-error-container{
+	display: block;
+	position: absolute;
+	background:url(images/form-error-pointer.png) 10px 0 no-repeat;
+	margin-left: 7px;
+	padding-top:15px;
+	margin-top:-7px;
+	white-space:nowrap;
+}
+
+.form-input-error{
+	background: #b83c3c;
+	border-radius: 5px;
+	padding:7px 10px;
+	color: #FFFFFF;
+}
+
+a.button{
+	margin-right:10px;
+}
+
+.js-show{
+	display:none;
+}
+
+.reading-box.main-accent{
+	background-color:#f6f6f6;
+	border-width:1px;
+	border-color:#f6f6f6;
+	border-top-width:3px;
+	border-top-color:#e67eb9;
+	border-style:solid;
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+}
+
+.alert.spaced{
+	margin-bottom:20px;
+}
+
+.genesis-progress-graph{
+	width:100%;
+	height:500px;
+}
+
+.progress-graph-switcher{
+	text-align:center;
+}
+
+.button.selected, .button.selected:hover{
+	border: 1px solid #515151;
+	box-shadow: 5px 50;
+	color: #000 !important;
+}
+
+@media only screen and (max-width: 800px){
+	.input-form label{
+		margin-bottom:5px;
+	}
+}
