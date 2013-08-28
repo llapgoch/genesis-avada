@@ -16,24 +16,36 @@ Template: Avada
 }
 
 .input-form .question-container{
-	padding-bottom:60px;
 	padding-left:4px;
 	overflow:hidden;
+	padding-bottom:30px;
 }
 
 .input-form .title{
 	margin-bottom:0;
 }
 
-.input-form label{
+.input-form .question-outer-container{
+	margin-bottom:60px;
+}
+
+.input-form .general-label{
 	display:block;
-	font-size:22px;
+	font-size:22px !important;
 	line-height:normal;
 	text-align:left;
 	white-space:nowrap;
 	margin-right:10px;
 	margin-bottom:5px;
 	color:#333333;
+	font-family: "Karla", Arial, Helvetica, sans-serif !important;
+}
+
+
+.input-form .inner-question-container{
+	margin:10px 0 10px 10px;
+	padding:20px 20px 0 20px;
+	border:1px dotted #cccccc;
 }
 
 input.general-input{
@@ -158,13 +170,29 @@ a.button{
 }
 
 .button.selected, .button.selected:hover{
-	border: 1px solid #515151;
-	box-shadow: 5px 50;
-	color: #000 !important;
+	border: 1px dashed #FFFFFF;
+	color: #FFF !important;
 }
 
 @media only screen and (max-width: 800px){
 	.input-form label{
 		margin-bottom:5px;
 	}
+}
+
+.page-template-start-template-php header .nav-holder{
+	display:none;
+}
+
+.page-template-start-template-php #header .logo{
+	margin-left:50% !important;
+	overflow:visible;
+}
+
+.page-template-start-template-php #header .logo img{
+	margin-left:-50%;
+}
+
+.zoomer{
+	text-align:center;
 }
