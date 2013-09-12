@@ -195,10 +195,19 @@ a.button{
 	margin-bottom:20px;
 }
 
-.genesis-progress-graph{
+.genesis-progress-graph, .genesis-graph-container{
 	width:100%;
 	height:500px;
 }
+
+.genesis-graph-container{
+	margin-top:10px;
+}
+
+.genesis-graph-container.empty{
+	border:1px solid #ccc;
+}
+
 
 .progress-graph-switcher{
 	text-align:center;
@@ -257,4 +266,16 @@ a.button{
 	top:50%;
 	margin-top:-30px;
 	margin-left:-30px;
+}
+
+.genesis-graph-container{
+	position:relative;
+}
+
+.genesis-graph-container .no-results{
+	width:50%;
+	position:absolute;
+	top:25%;
+	left:50%;
+	margin-left:-25%;
 }
