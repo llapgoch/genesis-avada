@@ -2168,11 +2168,17 @@
 		$row_css = 'max-width:100%;';
 		$main_class = 'width-100';
 	}
+
+	if($afterHeader = apply_filters('avada_after_header', '')) :
+	?>
+	<div class="avada-row">
+	<?php echo $afterHeader; ?>
+	</div>
+	<?php
+	endif;
 	
-	if(function_exists('avada_after_header')){
-		avada_after_header();
-	}
+	
 	
 	?>
 	<div id="main" class="<?php echo $main_class; ?>" style="overflow:hidden !important;<?php echo $main_css; ?>">
-		<div class="avada-row" style="<?php echo $row_css; ?>">moose
+		<div class="avada-row" style="<?php echo $row_css; ?>">
