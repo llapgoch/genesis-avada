@@ -8,7 +8,8 @@ Template: Avada
 @import url("../Avada/style.css");
 
 .header-notice{
-	margin-top:30px;
+	width:90%;
+	margin:30px auto 0 auto;
 }
 
 .progress-page-content{
@@ -34,6 +35,7 @@ Template: Avada
 .title h3{
 	float:left;
 	background:white;
+	white-space:inherit;
 }
 
 .input-form .question-outer-container{
@@ -114,6 +116,12 @@ input.weight-input{
 .input-form button.large{
 	width:85%;
 	font-size:24px;
+}
+
+@media (max-width: 600px) {
+	.input-form button.large{
+		font-size:18px;
+	}
 }
 
 .button-c-container{
@@ -221,6 +229,10 @@ a.button{
 	text-align:center;
 }
 
+.progress-graph-switcher .button{
+	margin-bottom:10px;
+}
+
 .button.selected, .button.selected:hover{
 	border: 1px dashed #FFFFFF;
 }
@@ -288,8 +300,9 @@ a.button{
 }
 
 .weight-loss-example p{
-	padding-top:30px;
 	font-size:20px;
+	min-height:91px;
+	padding-top:35px;
 }
 
 .weight-loss-example em{
@@ -297,11 +310,15 @@ a.button{
 }
 
 .weight-loss-example.butter{
-	background:url(images/butter.jpg) no-repeat;
+	text-align:center;
+	width:90%;
+	margin-top:20px;
+}
+
+.weight-loss-example.butter p{
+	background:url(images/butter.jpg) 0 50% no-repeat;
+	display:inline-block;
 	padding-left:160px;
-	height:91px;
-	width:500px;
-	margin:0 auto;
 }
 
 #login h1 a{
@@ -321,4 +338,16 @@ a.button{
 	border-radius:10px;
 	padding:10px;
 	width:300px;
+}
+
+
+#main .success-complete, 
+#main .success-complete h2{
+	font-size:22px;
+	text-align:center;
+	color:#E70590;
+}
+
+#main p.success-complete{
+	font-size:17px;
 }
