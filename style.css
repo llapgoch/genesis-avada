@@ -7,6 +7,10 @@ Template: Avada
 
 @import url("../Avada/style.css");
 
+body.hide-header-notice .header-notice{
+	display:none;
+}
+
 .header-notice{
 	width:90%;
 	margin:30px auto 0 auto;
@@ -22,8 +26,11 @@ Template: Avada
 
 .input-form .question-container{
 	padding-left:4px;
-	overflow:hidden;
-	padding-bottom:35px;
+	padding-top:35px;
+}
+
+.input-form .question-container:first-child{
+	padding-top:0px;
 }
 
 .input-form .title{
@@ -32,14 +39,15 @@ Template: Avada
 	background:url(images/title-bg.png) 0 50% repeat-x;
 }
 
-.title h3{
+.input-form .title .general-label{
 	float:left;
 	background:white;
 	white-space:inherit;
+	padding:0 8px 0 0;
 }
 
 .input-form .question-outer-container{
-	margin-bottom:60px;
+	margin-bottom:50px;
 }
 
 .input-form .general-label{
@@ -55,9 +63,10 @@ Template: Avada
 
 .input-form .inner-question-container{
 	margin:10px 0 10px 10px;
-	padding:20px 20px 0 20px;
+	padding:20px;
 	border:1px dotted #cccccc;
 }
+
 
 input.general-input{
 	padding:10px;
@@ -319,13 +328,6 @@ a.button{
 	background:url(images/butter.jpg) 0 50% no-repeat;
 	display:inline-block;
 	padding-left:160px;
-}
-
-#login h1 a{
-	background:url(images/login-logo.png) no-repeat;
-	width:295px;
-	height:94px;
-	margin:0 auto;
 }
 
 .survey-question input[type='text']{
