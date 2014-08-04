@@ -149,7 +149,8 @@ input.weight-input{
 }
 
 .input-form button.large,
-button.button.large{
+#your-profile .button.large
+{
 	width:85%;
 	font-size:24px;
 }

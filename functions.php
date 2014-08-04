@@ -7,7 +7,10 @@ add_action('tml_template', 'adapt_tml_filter_paths', 10, 3);
 add_filter('hide-header-notice', 'check_hide_header_notice');
 
 // Remove the styling of the login page which theme-my-login adds by default
+
+if(class_exists('Theme_My_Login')){
 remove_filter('site_url', array(Theme_My_Login::get_object(), 'site_url'), 10);
+}
 
 function avada_child_setup(){
 	wp_deregister_script('jquery');
