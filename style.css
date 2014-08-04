@@ -50,7 +50,31 @@ body.hide-header-notice .header-notice{
 	margin-bottom:50px;
 }
 
-.input-form .general-label{
+#your-profile label,
+#your-profile th{
+    font-size:13px;
+    color:#747474;
+    font-family:Arial, sans-serif;
+    font-weight:normal;
+}
+
+#your-profile h3{
+    display:none;
+}
+
+#password p{
+    padding-top:5px;
+}
+
+#your-profile .form-table th{
+    width:205px;
+}
+
+#your-profile span.description{
+    display:block;
+}
+
+.input-form .general-label,{
 	display:block;
 	font-size:22px !important;
 	line-height:normal;
@@ -68,7 +92,9 @@ body.hide-header-notice .header-notice{
 }
 
 
-input.general-input{
+input.general-input,
+#your-profile .form-table .regular-text,
+#your-profile .form-table [type="password"]{
 	padding:10px;
 	width:200px;
 	border:1px solid #cccccc;
@@ -122,7 +148,8 @@ input.weight-input{
 	margin:0 10px 0 5px;
 }
 
-.input-form button.large{
+.input-form button.large,
+button.button.large{
 	width:85%;
 	font-size:24px;
 }
