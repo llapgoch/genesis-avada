@@ -44,6 +44,7 @@ body.hide-header-notice .header-notice{
 	background:white;
 	white-space:inherit;
 	padding:0 8px 0 0;
+    font-size:17px;
 }
 
 .input-form .question-outer-container{
@@ -108,6 +109,15 @@ input.general-input,
 	border: 1px solid #aaa;
 }
 
+// Show with JS
+.user-tracking-input{
+    display:none;
+}
+
+.user-tracking-input .user-measurements{
+    display:none;
+}
+
 button.saveform{
 	display:block;
 }
@@ -148,6 +158,10 @@ input.weight-input{
 	margin:0 10px 0 5px;
 }
 
+.food-container .form-explanation{
+    display:none;
+}
+
 .input-form button.large,
 #your-profile .button.large
 {
@@ -173,12 +187,12 @@ input.weight-input{
 	list-style:none;
 	margin:0;
 	padding:0;
+    text-align:center;
 }
 
 .diet-days ul li{
-	float:left;
-	margin-right:20px;
-	text-align:center;
+    padding:0 7px;
+	display:inline-block;
 }
 
 .diet-days ul li span{
@@ -215,6 +229,7 @@ input.weight-input{
 	padding-top:15px;
 	margin-top:-7px;
 	white-space:nowrap;
+    z-index:100;
 }
 
 .form-input-error{
@@ -244,6 +259,35 @@ a.button{
 	border-bottom:none;
 }
 
+.record-food-container .general-input{
+    text-align:center;
+    width:42%;
+}
+
+.record-food-container .input-suffix{
+    display:block;
+}
+
+.record-food-container .form-input-error-container{
+    margin-left:20%;
+}
+
+.record-food-container table th{
+    color:#c15986;
+}
+
+.record-food-container table td{
+    position:relative;
+    text-align:center;
+}
+
+.alert{
+    padding:8px 45px;
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .alert.spaced{
 	margin-bottom:20px;
 }
@@ -266,6 +310,23 @@ a.button{
 	text-align:center;
 }
 
+.progress-graph-switcher .button-group{
+    display:inline-block;
+    text-align:center;
+    margin-left:1%;
+    padding-left:1%;
+    border-left:1px dotted #9fa0a0;
+    vertical-align:top;
+    width:49%;
+    box-sizing:border-box;
+}
+
+.progress-graph-switcher .button-group:first-child{
+    border-left:none;
+    padding-left:0;
+    margin-left:0;
+}
+
 .progress-graph-switcher .button{
 	margin-bottom:10px;
 }
@@ -278,6 +339,44 @@ a.button{
 	.input-form label{
 		margin-bottom:5px;
 	}
+    
+    .progress-graph-switcher .button-container{
+        text-align:center;
+    }
+    
+    .progress-graph-switcher .button-group{
+        width:52%;
+    }
+    
+    .progress-graph-switcher .button-group{
+        display:inline-block;
+        margin-left:0;
+        border-left:0;
+        padding-left:0;
+        margin-top:30px;
+        width:75%;
+    }
+    
+    .progress-graph-switcher .button-group:first-child{
+        margin-top:0;
+    }
+}
+
+
+
+@media only screen and (max-width: 500px){
+     .progress-graph-switcher .button-group.measurement .button{
+         display:block;
+         width:100%;
+     }
+     
+     .progress-graph-switcher .button-group.food .button{
+         display:block;
+         width:46%;
+         float:left;
+         margin-left:10px;
+         font-size:11px;
+     }
 }
 
 .page-template-start-template-php header .nav-holder{
@@ -380,4 +479,12 @@ a.button{
 
 #main p.success-complete{
 	font-size:17px;
+}
+
+.target-label{
+    background:#f9f7f6;
+    padding:5px;
+    border:1px solid pink;
+    text-align:center;
+    border-radius:10px;
 }
