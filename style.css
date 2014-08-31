@@ -390,10 +390,14 @@ a.button{
      
      .progress-graph-switcher .button-group.food .button{
          display:block;
-         width:46%;
+         width:45%;
          float:left;
          margin-left:10px;
          font-size:11px;
+     }
+     
+     .progress-graph-switcher .extended-button{
+         display:block;
      }
 }
 
