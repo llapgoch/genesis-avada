@@ -158,9 +158,6 @@ input.weight-input{
 	margin:0 10px 0 5px;
 }
 
-.food-container .form-explanation{
-    display:none;
-}
 
 .input-form button.large,
 #your-profile .button.large
@@ -181,6 +178,23 @@ input.weight-input{
 
 .button-c-container button{
 	display:inline-block;
+}
+
+.button-row{
+    margin-bottom:10px;
+}
+
+.button-row .button{
+    vertical-align:top;
+}
+
+.extended-button{
+    display:inline-block;
+    vertical-align:top;
+}
+
+.extended-button .averages.disabled{
+    opacity:0.5;
 }
 
 .diet-days ul{
@@ -301,6 +315,10 @@ a.button{
 	margin-top:10px;
 }
 
+.genesis-graph-container .weight-unit{
+    margin-left:42px;
+}
+
 .genesis-graph-container.empty{
 	border:1px solid #ccc;
 }
@@ -394,6 +412,7 @@ a.button{
 
 .zoomer{
 	text-align:center;
+    margin-top:25px;
 }
 
 .preload-cover{
