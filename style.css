@@ -24,6 +24,24 @@ body.hide-header-notice .header-notice{
 	margin-bottom:40px;
 }
 
+.reading-box.butted{
+    margin-bottom:0;
+}
+
+.input-form.eligibility-fail{
+    padding:6% 8%;
+    border:1px dotted #ABC729;
+}
+
+.input-form.eligibility-fail .title h3{
+    line-height:initial;
+}
+
+.input-form.eligibility-fail .title .general-label{
+    font-size:25px;
+    color:#ABC729;
+}
+
 .input-form .question-container{
 	padding-left:4px;
 	padding-top:35px;
@@ -278,6 +296,10 @@ a.button{
     width:42%;
 }
 
+.record-food-container .general-input.error{
+    background:white;
+}
+
 .record-food-container .input-suffix{
     display:block;
 }
@@ -511,3 +533,6 @@ a.button{
     text-align:center;
     border-radius:10px;
 }
+
+
+
