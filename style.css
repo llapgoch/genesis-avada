@@ -312,16 +312,25 @@ a.button{
     color:#c15986;
 }
 
-.record-food-container table td{
+.record-food-container table td,
+.record-food-container table th{
     position:relative;
     text-align:center;
 }
 
+.fusion-alert{
+    text-transform:none;
+}
+
 .alert{
     padding:8px 45px;
-    width:75%;
+    width:85%;
     margin-left:auto;
     margin-right:auto;
+}
+
+.alert-warning{
+    border:1px solid #e7d48d;
 }
 
 .alert.spaced{
@@ -534,5 +543,9 @@ a.button{
     border-radius:10px;
 }
 
-
+/* For some reason, the avada theme makes everything border-box,
+which breaks the border on the slider */
+#sliders-container > div{
+    box-sizing:initial;
+}
 

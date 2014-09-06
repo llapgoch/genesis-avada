@@ -64,7 +64,7 @@ function header_messages(){
 		return '';
 	}
 	
-	return "<div class='alert notice header-notice'>
+	return "<div class='fusion-alert alert notice alert-warning alert-shadow header-notice'>
 				<div class='msg'>" . $surveyMessage . "</div>
 			</div>";
 	
