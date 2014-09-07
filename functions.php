@@ -13,9 +13,9 @@ remove_filter('site_url', array(Theme_My_Login::get_object(), 'site_url'), 10);
 }
 
 function avada_child_setup(){
-	wp_deregister_script('jquery');
+	//wp_deregister_script('jquery');
     // Stick to version 1.8.3, we need jQuery's $browser functionality for the Avada theme
-	wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js');
+	//wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js');
 	wp_enqueue_script('jquery-ui', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js', array(
 		'jquery'
 	));
