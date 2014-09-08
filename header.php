@@ -128,8 +128,6 @@
 	});
 	</script>
 	
-	<script src="<?php echo get_template_directory_uri(); ?>/js/excanvas.js"></script>
-	
 	<![endif]-->
 	
 	<!--[if lte IE 9]>
