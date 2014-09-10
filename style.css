@@ -28,6 +28,10 @@ body.hide-header-notice .header-notice{
     margin-bottom:0;
 }
 
+.reading-box a{
+    color:#E80690;
+}
+
 .input-form.eligibility-fail{
     padding:6% 8%;
     border:1px dotted #ABC729;
@@ -40,6 +44,17 @@ body.hide-header-notice .header-notice{
 .input-form.eligibility-fail .title .general-label{
     font-size:25px;
     color:#ABC729;
+}
+
+.input-form .help-icon{
+    display:inline-block;
+    vertical-align:middle;
+    padding-right:10px;
+    font-size:25px;
+}
+
+.unit-switcher{
+    margin-bottom:20px;
 }
 
 .input-form .question-container{
@@ -58,7 +73,7 @@ body.hide-header-notice .header-notice{
 }
 
 .input-form .title .general-label{
-	float:left;
+	display:inline-block;
 	background:white;
 	white-space:inherit;
 	padding:0 8px 0 0;
@@ -148,7 +163,8 @@ button.changeunits{
 	display:none !important;
 }
 
-input.weight-input{
+input.weight-input,
+input.height-input{
 	width:100px;
 }
 
@@ -541,6 +557,10 @@ a.button{
     border:1px solid pink;
     text-align:center;
     border-radius:10px;
+}
+
+.help-icon:before{
+    color:#CCC;
 }
 
 /* For some reason, the avada theme makes everything border-box,
