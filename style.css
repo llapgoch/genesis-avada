@@ -164,7 +164,8 @@ button.changeunits{
 }
 
 input.weight-input,
-input.height-input{
+input.height-input,
+input.smaller{
 	width:100px;
 }
 
@@ -561,6 +562,15 @@ a.button{
 
 .help-icon:before{
     color:#CCC;
+}
+
+/* $BMI */
+
+.container-bmi .bmi-inner{
+    font-size:35px;
+    padding:20px;
+    color:#E70892;
+    text-shadow: 1px 1px 5px #737373;
 }
 
 /* For some reason, the avada theme makes everything border-box,
