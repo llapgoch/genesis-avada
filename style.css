@@ -7,6 +7,10 @@ Template: Avada
 
 @import url("../Avada/style.css");
 
+strong{
+    font-weight:700;
+}
+
 body.hide-header-notice .header-notice{
 	display:none;
 }
@@ -24,11 +28,13 @@ body.hide-header-notice .header-notice{
 	margin-bottom:40px;
 }
 
+
 .reading-box.butted{
     margin-bottom:0;
 }
 
-.reading-box a{
+.reading-box a,
+a.bright{
     color:#E80690;
 }
 
@@ -44,6 +50,10 @@ body.hide-header-notice .header-notice{
 .input-form.eligibility-fail .title .general-label{
     font-size:25px;
     color:#ABC729;
+}
+
+.input-form.eligibility-fail p{
+    font-size:15px;
 }
 
 .input-form .help-icon{
@@ -564,6 +574,10 @@ a.button{
     color:#CCC;
 }
 
+.eligibility-form label strong{
+    color:#c55800;
+}
+
 /* $BMI */
 
 .container-bmi .bmi-inner{
@@ -577,4 +591,94 @@ a.button{
 which breaks the border on the slider */
 #sliders-container > div{
     box-sizing:initial;
+}
+
+/* Login page */
+#login{
+    padding-top:1%;
+    width:50%;
+    max-width:550px;
+}
+
+#login .fusion-reading-box-container{
+    margin-bottom:20px;
+}
+
+#login .fusion-reading-box-container p{
+    margin-bottom:1em;
+}
+
+#login .fusion-reading-box-container li{
+    margin-bottom:1em;
+}
+
+.fusion-reading-box-container .centered-button-box{
+    text-align:center;
+    margin-top:35px;
+}
+
+#login h1 a{
+	background:url(images/login-logo.png) no-repeat;
+	width:295px;
+	height:94px;
+	margin:0 auto;
+    margin-bottom:20px;
+}
+
+/* To remove the sep line */
+#login #nav{
+    color:#F1F1F1;
+}
+
+/* Stop min-heights bleeding through from the Avada theme */
+#login input{
+    min-height:initial;
+    text-transform:none;
+    text-shadow:none;
+}
+
+#login_error{
+    margin-bottom:10px;
+}
+
+
+
+/* Register Form */
+#registerform{
+    margin:0 auto;
+    padding:20px 10%;
+}
+
+#registerform label[for="user_login"]{
+    display:none;
+}
+
+#registerform .message{
+    margin-bottom:20px;
+}
+
+#reg_passmail{
+    display:none;
+}
+
+@media (max-width: 800px) {
+	#login{
+	    width:80%;
+	}
+}
+
+@media (max-width: 450px) {
+	#login{
+	    width:100%;
+	}
+}
+
+
+/* Hide the register link */
+#login #nav a:first-child{
+    display:none;
+}
+
+.message.register{
+    margin-bottom:10px;
 }

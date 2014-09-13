@@ -4,7 +4,8 @@ add_action('wp', 'avada_child_setup');
 add_filter('avada_after_header', 'header_messages');
 
 add_action('tml_template', 'adapt_tml_filter_paths', 10, 3);
-add_filter('hide-header-notice', 'check_hide_header_notice');
+add_filter('hide-header-notice', 'avada_check_hide_header_notice');
+add_action('login_enqueue_scripts', 'avada_enqueue_login_scripts');
 
 // Remove the styling of the login page which theme-my-login adds by default
 
@@ -14,8 +15,7 @@ remove_filter('site_url', array(Theme_My_Login::get_object(), 'site_url'), 10);
 
 function avada_child_setup(){
 	//wp_deregister_script('jquery');
-    // Stick to version 1.8.3, we need jQuery's $browser functionality for the Avada theme
-	//wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js');
+
 	wp_enqueue_script('jquery-ui', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js', array(
 		'jquery'
 	));
@@ -23,11 +23,15 @@ function avada_child_setup(){
 	wp_enqueue_style('jquerycss', dirname(get_stylesheet_uri()) . "/jquery-ui-1.10.3.custom.min.css");
 
 	add_filter('wp_nav_menu_items','extra_nav_menu_items', 10, 2);
-	add_action("login_head", "login_head");
-   
 }
 
-function check_hide_header_notice(){
+function avada_enqueue_login_scripts(){
+    ?>
+    <link rel="stylesheet" href='<?php echo get_stylesheet_uri();?>' media='all' />
+    <?php
+}
+
+function avada_check_hide_header_notice(){
     $parts = parse_url($_SERVER['REQUEST_URI']);
     $page = trim($parts['path'], '/');
 
@@ -51,10 +55,8 @@ function extra_nav_menu_items( $items, $args ) {
 	}
 	return $items;
 }
+	
 
-function login_head(){
-	wp_enqueue_style("admin-login", dirname(get_stylesheet_uri()). "/style.css");
-}
 
 function header_messages(){
 	// Get survey messages
