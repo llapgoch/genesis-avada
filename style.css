@@ -15,6 +15,19 @@ body.hide-header-notice .header-notice{
 	display:none;
 }
 
+/* $Auto width form */
+.auto-width-form{
+    display:table;
+}
+
+.auto-width-form .col{
+    display:table-cell;
+}
+
+.auto-width-form .col:first-child{
+    padding-right:5px;
+}
+
 .header-notice{
 	width:90%;
 	margin:30px auto 0 auto;
@@ -203,6 +216,10 @@ input.smaller{
 	margin:0 10px 0 5px;
 }
 
+.button{
+    box-sizing:border-box;
+}
+
 
 .input-form button.large,
 #your-profile .button.large
@@ -296,6 +313,11 @@ input.smaller{
 	border-radius: 5px;
 	padding:7px 10px;
 	color: #FFFFFF;
+}
+
+.form-input-error-container.field-checkbox{
+    margin-left:-15px;
+    margin-top:0;
 }
 
 a.button{
@@ -459,7 +481,8 @@ a.button{
      }
 }
 
-.page-template-start-template-php header .nav-holder{
+.page-template-start-template-php header .nav-holder,
+.page-template-start-template-php header .mobile-nav-holder{
 	display:none;
 }
 
@@ -671,6 +694,17 @@ which breaks the border on the slider */
 	#login{
 	    width:100%;
 	}
+}
+
+/* $Enter Weight Page */
+.enter-weight-page #nav li,
+.enter-weight-page #sticky-nav li{
+    display:none;
+}
+
+.enter-weight-page #nav li.menu-item-logout,
+.enter-weight-page #sticky-nav li.menu-item-logout{
+    display:block;
 }
 
 
