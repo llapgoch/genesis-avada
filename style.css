@@ -85,6 +85,11 @@ a.bright{
 	padding-top:35px;
 }
 
+.question-container.totals .general-input{
+    border:1px dotted #E67FB9;
+    color:#6696FC;
+}
+
 .input-form .question-container:first-child{
 	padding-top:0px;
 }
@@ -101,6 +106,16 @@ a.bright{
 	white-space:inherit;
 	padding:0 8px 0 0;
     font-size:17px;
+}
+
+.input-form .example .title,
+.input-form .example .title .general-label{
+    background:none;
+    margin-bottom:0 !important;
+}
+
+.example-explanation{
+    color:#E67FB9;
 }
 
 .input-form .question-outer-container{
@@ -148,8 +163,47 @@ a.bright{
 	border:1px dotted #cccccc;
 }
 
+.food-input-form{
+    display:table;
+    width:100%;
+}
+
+.food-input-form .input-box{
+    display:table-cell;
+    text-align:center;
+    position:relative;
+    width:13%;
+    border-left:1px dotted #ccc;
+    padding:10px;
+}
+
+.example .food-input-form .input-box .general-input{
+    background:#F3F3F3;
+}
+
+.food-input-form .input-box:first-child{
+    border-left:none;
+}
+
+.food-input-form .input-box > label{
+     color:#E67FB9;
+     display:block;
+}
+
+.food-input-form .food-totals{
+    margin-top:15px;
+}
+
+@media(min-width:680px){
+    .food-totals .general-input.number{
+        border:0;
+    }
+}
+
+
 
 input.general-input,
+.general-input,
 #your-profile .form-table .regular-text,
 #your-profile .form-table [type="password"]{
 	padding:10px;
@@ -201,7 +255,7 @@ input.smaller{
 .form-explanation{
 	background:#fff4f4;
 	padding:6px;
-	margin-bottom:6px;
+	margin-bottom:20px;
 	border-radius:5px;
 }
 
@@ -209,6 +263,11 @@ input.smaller{
 	display:block;
 	padding-top:10px;
 	font-weight:bold;
+}
+
+.form-explanation .example{
+    border-top:2px dotted white;
+    padding-top:15px;
 }
 
 .input-form .input-suffix{
@@ -342,7 +401,8 @@ a.button{
 
 .record-food-container .general-input{
     text-align:center;
-    width:42%;
+    width:47px;
+    display:inline-block;
 }
 
 .record-food-container .general-input.error{
@@ -353,10 +413,6 @@ a.button{
     display:block;
 }
 
-.record-food-container .form-input-error-container{
-    margin-left:20%;
-}
-
 .record-food-container table th{
     color:#c15986;
 }
@@ -365,6 +421,41 @@ a.button{
 .record-food-container table th{
     position:relative;
     text-align:center;
+}
+
+.food-input-form .input-container{
+    display:inline-block;
+}
+
+@media(max-width:680px){
+    .food-input-form .input-box{
+        display:block;
+        text-align:left;
+        width:auto;
+        border:none;
+    }
+    
+    .totals .food-input-form .input-box p,
+    .targets .food-input-form .input-box p{
+        display:inline-block;
+    }
+    
+    .food-input-form .input-box > label, 
+    .food-totals .total-label{
+        min-width:90px;
+        display:inline-block;
+    }
+    
+    .food-input-form .food-totals .number.general-input{
+        display:inline-block;
+        border:1px dotted #E67FB9;
+        color:#ACACAC;
+    }
+    
+    .record-food-container .general-input{
+        width:100px;
+        display:inline-block;
+    }
 }
 
 .fusion-alert{
@@ -716,3 +807,5 @@ which breaks the border on the slider */
 .message.register{
     margin-bottom:10px;
 }
+
+
