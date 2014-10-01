@@ -100,6 +100,12 @@ a.bright{
 	background:url(images/title-bg.png) 0 50% repeat-x;
 }
 
+
+.input-form .totals .title label,
+.input-form .targets label{
+    color:rgb(96, 118, 204);
+}
+
 .input-form .title .general-label{
 	display:inline-block;
 	background:white;
@@ -190,6 +196,11 @@ a.bright{
      display:block;
 }
 
+.totals .food-input-form .input-box > label,
+.targets .food-input-form .input-box > label{
+    color:rgb(96, 118, 204);
+}
+
 .food-input-form .food-totals{
     margin-top:15px;
 }
@@ -266,7 +277,7 @@ input.smaller{
 }
 
 .form-explanation .example{
-    border-top:2px dotted white;
+    border-top:1px dotted #ccc;
     padding-top:15px;
 }
 
