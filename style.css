@@ -65,8 +65,17 @@ a.bright{
     color:#ABC729;
 }
 
-.input-form.eligibility-fail p{
+.input-form.eligibility-fail{
     font-size:15px;
+    line-height:19px;
+}
+
+.input-form.eligibility-fail p a{
+    color:#E90591;
+}
+
+.input-form.eligibility-fail p a:hover{
+    color:#F881CA;
 }
 
 .input-form .help-icon{
@@ -488,7 +497,10 @@ a.button{
 	margin-bottom:20px;
 }
 
-.genesis-progress-graph, .genesis-graph-container{
+
+
+.genesis-progress-graph, 
+.genesis-graph-container{
 	width:100%;
 	height:500px;
 }
@@ -497,8 +509,25 @@ a.button{
 	margin-top:10px;
 }
 
+.genesis-graph-container .graph-top{
+    overflow:hidden;
+    margin-top:45px;
+}
+
 .genesis-graph-container .weight-unit{
     margin-left:42px;
+    float:left;
+}
+
+.genesis-graph-container .graph-legend{
+    float:right;
+    margin-right:20px;
+}
+
+.genesis-graph-container .graph-legend h3{
+    font-size:15px;
+    color:#E70590;
+    margin:0;
 }
 
 .genesis-graph-container.empty{
