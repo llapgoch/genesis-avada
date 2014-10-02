@@ -178,6 +178,12 @@ a.bright{
 	border:1px dotted #cccccc;
 }
 
+@media(max-width:600px){
+    .input-form .inner-question-container{
+        padding:15px 5px;
+    }
+}
+
 .food-input-form{
     display:table;
     width:100%;
@@ -304,12 +310,17 @@ input.smaller{
 #your-profile .button.large
 {
 	width:85%;
-	font-size:24px;
 }
 
 @media (max-width: 600px) {
 	.input-form button.large{
 		font-size:18px;
+	}
+}
+
+@media (max-width: 400px) {
+	.input-form button.large{
+		font-size:14px;
 	}
 }
 
@@ -349,6 +360,23 @@ input.smaller{
     padding:0 7px;
 	display:inline-block;
 }
+
+@media(max-width:600px){
+    .diet-days ul li{
+        float:left;
+        margin-bottom:20px;
+    }
+    
+    .diet-days ul li:nth-child(2n+1){
+        clear:left;
+    }
+    
+    .diet-days ul{
+        text-align:left;
+    }
+}
+
+
 
 .diet-days ul li span{
 	display:block;
@@ -399,8 +427,24 @@ input.smaller{
     margin-top:0;
 }
 
-a.button{
+a.button,
+button.button{
 	margin-right:10px;
+    white-space:nowrap;
+}
+
+@media(max-width:600px){
+    a.button.large,
+    button.button.large{
+        font-size:11px;
+    }
+}
+
+@media(max-width:830px){
+    button.button + button.button,
+    a.button + a.button{
+        margin-top:10px;
+    }
 }
 
 .js-show{
@@ -489,6 +533,12 @@ a.button{
     margin-right:auto;
 }
 
+@media(max-width:800px){
+    .alert{
+        padding:10px;
+    }
+}
+
 .alert-warning{
     border:1px solid #e7d48d;
 }
@@ -498,11 +548,14 @@ a.button{
 }
 
 
+.genesis-progress-graph{
+    width:100%;
+    height:500px;
+}
 
-.genesis-progress-graph, 
-.genesis-graph-container{
+.genesis-progress-graph-container{
 	width:100%;
-	height:500px;
+	height:540px;
 }
 
 .genesis-graph-container{
@@ -528,6 +581,12 @@ a.button{
     font-size:15px;
     color:#E70590;
     margin:0;
+}
+
+@media only screen and (max-width: 650px){
+    .genesis-graph-container .graph-legend h3{
+        font-size:11px;
+    }
 }
 
 .genesis-graph-container.empty{
