@@ -11,6 +11,14 @@ strong{
     font-weight:700;
 }
 
+.button-small, .button.small{
+    font-size:11px;
+}
+
+.button-large, .button.large{
+    font-size:12px;
+}
+
 body.hide-header-notice .header-notice{
 	display:none;
 }
@@ -121,6 +129,11 @@ a.bright{
 	white-space:inherit;
 	padding:0 8px 0 0;
     font-size:17px;
+}
+
+.input-form .title h3 .general-label,
+.input-form .title h3.general-label{
+    font-size:19px;
 }
 
 .input-form .example .title,
@@ -441,8 +454,9 @@ button.button{
 }
 
 @media(max-width:830px){
-    button.button + button.button,
-    a.button + a.button{
+    
+    .msg button.button + button.button,
+    .msg a.button + a.button{
         margin-top:10px;
     }
 }
@@ -463,7 +477,7 @@ button.button{
 	border-bottom:none;
 }
 
-.record-food-container .general-input{
+.record-food-container .general-input.food-input{
     text-align:center;
     width:47px;
     display:inline-block;
@@ -486,6 +500,27 @@ button.button{
     position:relative;
     text-align:center;
 }
+
+.record-food-container .food-description{
+    margin-left:15px;
+    margin-bottom:15px;
+}
+
+.record-food-container .food-description label{
+    display:block;
+}
+
+.record-food-container .food-description input{
+    width:60%;
+}
+
+
+@media(max-width:700px){
+    .record-food-container .food-description input{
+        width:90%;
+    }
+}
+
 
 .food-input-form .input-container{
     display:inline-block;
@@ -836,6 +871,21 @@ which breaks the border on the slider */
 	height:94px;
 	margin:0 auto;
     margin-bottom:20px;
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+
+only screen and (-o-min-device-pixel-ratio: 2/1),
+
+only screen and (-webkit-min-device-pixel-ratio: 2),
+
+only screen and (min-device-pixel-ratio: 2) {
+
+    #login h1 a{
+        background:url(images/login-logo@2x.png) no-repeat;
+        background-size:100%;
+    }
+    
 }
 
 /* To remove the sep line */
