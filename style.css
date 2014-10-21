@@ -624,6 +624,59 @@ button.button{
     }
 }
 
+
+.genesis-food-table-container{
+    display:none;
+}
+
+.post-content .genesis-food-table-container h3{
+    color:#0092DF;
+    text-align:center;
+}
+
+.genesis-food-table-container .alert-warning{
+    margin:100px auto;
+}
+
+.progress-food-log{
+    width:100%;
+}
+
+.progress-food-log th{
+    background: #85CDF3;
+    border:1px solid white;
+    text-align:center;
+    padding:10px;
+    color:white;
+}
+
+
+.progress-food-log td{
+    padding:10px;
+    text-align:center;
+    border:1px solid #85CDF3;
+}
+
+/*@media only screen and (max-width: 650px){
+    .progress-food-log td,
+        .progress-food-log th{
+            padding:2px;
+            font-size:10px;
+        }
+    }
+    .progress-food-log th span{
+        display:block;
+        padding: 0 .5em;
+
+
+        white-space:nowrap;
+        display:block;
+        -webkit-transform:rotate(90deg);
+        -moz-transform:rotate(90deg);
+        -o-transform:rotate(90deg);
+    }
+}*/
+
 .genesis-graph-container.empty{
 	border:1px solid #ccc;
 }
@@ -688,18 +741,11 @@ button.button{
 
 
 @media only screen and (max-width: 500px){
-     .progress-graph-switcher .button-group.measurement .button{
+     .progress-graph-switcher .button-group .button{
          display:block;
          width:100%;
      }
      
-     .progress-graph-switcher .button-group.food .button{
-         display:block;
-         width:45%;
-         float:left;
-         margin-left:10px;
-         font-size:11px;
-     }
      
      .progress-graph-switcher .extended-button{
          display:block;
