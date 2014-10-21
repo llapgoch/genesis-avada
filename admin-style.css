@@ -1,0 +1,29 @@
+.admin-list{
+    overflow:hidden;
+}
+
+.admin-list dd{
+    float:left;
+    margin-bottom:10px;
+}
+
+.admin-list dt{
+    width:155px;
+    color:blue;
+    float:left;
+    clear:left;
+}
+
+.wp-list-table.food tfoot td{
+    font-weight:bold;
+}
+
+.wp-list-table.food-description td.name{
+    width:200px;
+    font-weight:bold;
+}
+
+.wp-list-table.food-description td{
+    border-bottom:1px solid #F1F1F1;
+}
+

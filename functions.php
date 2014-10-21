@@ -6,6 +6,8 @@ add_filter('avada_after_header', 'header_messages');
 add_action('tml_template', 'adapt_tml_filter_paths', 10, 3);
 add_filter('hide-header-notice', 'avada_check_hide_header_notice');
 add_action('login_enqueue_scripts', 'avada_enqueue_login_scripts');
+add_action( 'admin_enqueue_scripts', 'load_admin_style' );
+
 
 // Remove the styling of the login page which theme-my-login adds by default
 
@@ -29,6 +31,10 @@ function avada_enqueue_login_scripts(){
     ?>
     <link rel="stylesheet" href='<?php echo get_stylesheet_uri();?>' media='all' />
     <?php
+}
+
+function load_admin_style() {
+    wp_enqueue_style( 'admin_css', get_stylesheet_directory_uri() . '/admin-style.css', false, '1.0.0' );
 }
 
 function avada_check_hide_header_notice(){
