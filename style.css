@@ -634,9 +634,10 @@ button.button{
     text-align:center;
 }
 
-.genesis-food-table-container .alert-warning{
+.user-data-container .alert-warning{
     margin:100px auto;
 }
+
 
 .progress-food-log{
     width:100%;
@@ -657,28 +658,9 @@ button.button{
     border:1px solid #85CDF3;
 }
 
-/*@media only screen and (max-width: 650px){
-    .progress-food-log td,
-        .progress-food-log th{
-            padding:2px;
-            font-size:10px;
-        }
-    }
-    .progress-food-log th span{
-        display:block;
-        padding: 0 .5em;
-
-
-        white-space:nowrap;
-        display:block;
-        -webkit-transform:rotate(90deg);
-        -moz-transform:rotate(90deg);
-        -o-transform:rotate(90deg);
-    }
-}*/
-
-.genesis-graph-container.empty{
-	border:1px solid #ccc;
+.genesis-graph-container.empty .graph-top,
+.genesis-graph-container.empty .zoomer{
+    display:none;
 }
 
 
@@ -800,14 +782,6 @@ button.button{
 
 .genesis-graph-container{
 	position:relative;
-}
-
-.genesis-graph-container .no-results{
-	width:75%;
-	position:absolute;
-	top:25%;
-	left:36%;
-	margin-left:-25%;
 }
 
 .weight-loss-example p{
