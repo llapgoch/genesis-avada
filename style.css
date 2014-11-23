@@ -19,6 +19,12 @@ strong{
     font-size:12px;
 }
 
+.button.purple{
+    background-image:linear-gradient(to top, #ba63e4, #df9dff);
+    border:1px solid #783697;
+    color:#640094;
+}
+
 body.hide-header-notice .header-notice{
 	display:none;
 }
@@ -64,7 +70,8 @@ a.bright{
     border:1px dotted #ABC729;
 }
 
-.input-form.eligibility-fail .title h3{
+.input-form.eligibility-fail .title h3,
+.input-form.eligibility-fail h2{
     line-height:initial;
 }
 
@@ -78,12 +85,24 @@ a.bright{
     line-height:19px;
 }
 
-.input-form.eligibility-fail p a{
+.input-form.eligibility-fail a{
     color:#E90591;
 }
 
-.input-form.eligibility-fail p a:hover{
+.input-form.eligibility-fail a:hover{
     color:#F881CA;
+}
+
+.input-form.eligibility-fail ul li{
+    margin-bottom:1em;
+}
+
+.input-form.eligibility-fail .addiction-links{
+    margin-top:1em;
+}
+
+.input-form.eligibility-fail .addiction-links li{
+    margin-bottom:0;
 }
 
 .input-form .help-icon{
@@ -614,12 +633,17 @@ button.button{
 .genesis-graph-container .graph-legend{
     float:right;
     margin-right:20px;
+    text-align:right;
 }
 
 .genesis-graph-container .graph-legend h3{
     font-size:15px;
     color:#E70590;
     margin:0;
+}
+
+.genesis-graph-container .graph-legend p{
+    margin-bottom:0;
 }
 
 @media only screen and (max-width: 650px){
@@ -874,6 +898,11 @@ which breaks the border on the slider */
 
 #login .fusion-reading-box-container{
     margin-bottom:20px;
+    font-size:16px;
+}
+
+#login .fusion-reading-box-container h2{
+    margin-bottom:1em;
 }
 
 #login .fusion-reading-box-container p{
