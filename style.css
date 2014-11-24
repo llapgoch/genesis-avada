@@ -169,6 +169,49 @@ a.bright{
 	margin-bottom:50px;
 }
 
+#your-profile .stats{
+    border-radius:10px;
+    background:rgb(255, 237, 240);
+    margin:20px 0;
+    max-width:416px;
+}
+
+#your-profile .stats h4{
+    font-size:16px;
+    padding:10px;
+    margin:0;
+}
+
+#your-profile .stat{
+    font-size:14px;
+    color:purple;
+}
+
+@media(min-width:850px){
+    #your-profile{
+        position:relative;
+    }
+    
+    #your-profile .form-table{
+        width:50%;
+        float:left;
+        clear:left;
+    }
+    
+    #your-profile .stats{
+        width:45%;
+        position:absolute;
+        right:0;
+        margin:0;
+    }
+    
+    #your-profile .stats .form-table{
+        float:none;
+        width:auto;
+        clear:none;
+    }
+}
+
 #your-profile label,
 #your-profile th{
     font-size:13px;
@@ -707,6 +750,10 @@ button.button{
     box-sizing:border-box;
 }
 
+.progress-graph-switcher .button-group .averages{
+    max-width:210px;
+}
+
 .progress-graph-switcher .button-group:first-child{
     border-left:none;
     padding-left:0;
@@ -761,6 +808,8 @@ button.button{
          display:block;
      }
 }
+
+
 
 .page-template-start-template-php header .nav-holder,
 .page-template-start-template-php header .mobile-nav-holder{
