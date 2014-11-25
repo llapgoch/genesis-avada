@@ -182,10 +182,33 @@ a.bright{
     margin:0;
 }
 
+#your-profile .stats{
+    border:1px solid #ccc;
+}
+
+#your-profile .food-table{
+    margin:5px;
+}
+
+#your-profile .food-table td{
+    border-left:1px solid #ccc;
+        border-bottom:1px solid #ccc
+}
+
+#your-profile .food-table th{
+    border-bottom:1px solid #ccc;
+}
+
+#your-profile .stats td{
+    text-align:center;
+}
+
 #your-profile .stat{
     font-size:14px;
     color:purple;
 }
+
+
 
 @media(min-width:850px){
     #your-profile{
@@ -209,6 +232,10 @@ a.bright{
         float:none;
         width:auto;
         clear:none;
+    }
+    
+    #your-profile .button-c-container .button{
+        margin-top:160px;
     }
 }
 
