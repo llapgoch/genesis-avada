@@ -190,9 +190,23 @@ a.bright{
     margin:5px;
 }
 
-#your-profile .food-table td{
+#your-profile .food-table td, 
+#your-profile .food-table th {
     border-left:1px solid #ccc;
-        border-bottom:1px solid #ccc
+    border-bottom:1px solid #ccc
+}
+
+#your-profile .food-table th:first-child{
+    border-left:none;
+}
+
+#your-profile .food-table tr:first-child th{
+    text-align:center;
+}
+
+#your-profile .food-table tr:last-child td,
+#your-profile .food-table tr:last-child th{
+    border-bottom:none;
 }
 
 #your-profile .food-table th{
@@ -245,6 +259,14 @@ a.bright{
     color:#747474;
     font-family:Arial, sans-serif;
     font-weight:normal;
+}
+
+#your-profile label{
+    display:inline-block;
+}
+
+#your-profile th.max-weight{
+    padding-left:24px;
 }
 
 #your-profile h3{
