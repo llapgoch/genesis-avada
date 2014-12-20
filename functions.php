@@ -57,7 +57,9 @@ function extra_nav_menu_items( $items, $args ) {
 
 	if(isset($args->menu) && $args->menu == '' && is_user_logged_in()){
 		
-		$items .= '<li id="menu-item-logout" class="menu-item menu-item-logout"><a href="'.wp_logout_url('/').'">'.__('Logout').'</a></li>';
+		$items .= '<li id="menu-item-logout" class="menu-item menu-item-logout"><a href="'.wp_logout_url('/').'">'.__('Log Out').'</a></li>';
+	}else{
+	    $items .= '<li id="menu-item-logout" class="menu-item menu-item-login"><a href="'.wp_login_url('/').'">'.__('Log In').'</a></li>';
 	}
 	return $items;
 }
