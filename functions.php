@@ -1,7 +1,8 @@
 <?php
 
 add_action('wp', 'avada_child_setup');
-add_filter('avada_after_header', 'header_messages');
+// Removed survey messages - Claire's added them to the top menus
+//add_filter('avada_after_header', 'header_messages');
 
 add_action('tml_template', 'adapt_tml_filter_paths', 10, 3);
 add_filter('hide-header-notice', 'avada_check_hide_header_notice');
