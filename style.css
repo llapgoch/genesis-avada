@@ -25,6 +25,14 @@ strong{
     color:#640094;
 }
 
+#nav, #sticky-nav, .navigation{
+    font-size:13px !important;
+}
+
+#nav ul li, #sticky-nav ul li{
+    padding-right:16px !important;
+}
+
 body.hide-header-notice .header-notice{
 	display:none;
 }
