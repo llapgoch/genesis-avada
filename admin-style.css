@@ -27,3 +27,7 @@
     border-bottom:1px solid #F1F1F1;
 }
 
+.table-scroller{
+	max-height: 380px;
+	overflow-y: scroll;
+}
