@@ -31,3 +31,20 @@
 	max-height: 380px;
 	overflow-y: scroll;
 }
+
+table #gained_more_than_one_kg{
+	width: 25px;
+	background: url('images/flag.jpg') no-repeat 50% 30%;
+}
+
+table .flag{
+	text-indent: -9999px;
+	background: url('images/flag.jpg') no-repeat;
+	width: 20px;
+	height: 22px;
+	display: block;
+}
+
+table .gained_more_than_one_kg{
+	padding: 3px;
+}
