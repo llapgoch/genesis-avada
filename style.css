@@ -245,9 +245,10 @@ a.bright{
     
     #your-profile .stats{
         width:45%;
-        position:absolute;
+        position:relative;
         right:0;
-        margin:0;
+		top:0;
+		display:inline-block;
     }
     
     #your-profile .stats .form-table{
@@ -256,9 +257,9 @@ a.bright{
         clear:none;
     }
     
-    #your-profile .button-c-container .button{
+/*    #your-profile .button-c-container .button{
         margin-top:210px;
-    }
+    }*/
 }
 
 #your-profile label,
