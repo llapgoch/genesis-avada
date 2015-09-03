@@ -230,6 +230,13 @@ a.bright{
     color:purple;
 }
 
+#your-profile input.weight-input{
+	width: 60px !important;
+}
+
+#your-profile .weight-unit{
+	margin-bottom: 10px;
+}
 
 
 @media(min-width:850px){
