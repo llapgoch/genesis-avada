@@ -8,10 +8,11 @@
 }
 
 .admin-list dt{
-    width:155px;
+    width:200px;
     color:blue;
     float:left;
     clear:left;
+	padding-bottom: 10px;
 }
 
 .wp-list-table.food tfoot td{
