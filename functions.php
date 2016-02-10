@@ -56,7 +56,7 @@ function adapt_tml_filter_paths($path, $locations){
 
 function extra_nav_menu_items( $items, $args ) {
 
-	if(isset($args->menu) && $args->menu == '' && is_user_logged_in()){
+	if(is_user_logged_in()){
 		
 		$items .= '<li id="menu-item-logout" class="menu-item menu-item-logout"><a href="'.wp_logout_url('/').'">'.__('Log Out').'</a></li>';
 	}else{
