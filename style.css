@@ -301,7 +301,7 @@ a.bright{
     display:block;
 }
 
-.input-form .general-label,{
+.input-form .general-label{
 	display:block;
 	font-size:22px !important;
 	line-height:normal;
@@ -385,7 +385,7 @@ input.general-input,
 	border: 1px solid #aaa;
 }
 
-// Show with JS
+/* Show with JS */
 .user-tracking-input{
     display:none;
 }
