@@ -129,6 +129,11 @@ a.bright{
 	padding-top:35px;
 }
 
+.input-form .question-container-small{
+    padding-left:4px;
+    padding-top:15px;
+}
+
 .question-container.totals .general-input{
     border:1px dotted #E67FB9;
     color:#6696FC;
@@ -637,7 +642,9 @@ button.button{
     margin-bottom:8px;
 }
 
-
+.large-input{
+    width:70%;
+}
 
 .record-food-container .food-description{
     width:60%;
