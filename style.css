@@ -390,11 +390,6 @@ input.general-input,
 	border: 1px solid #aaa;
 }
 
-/* Show with JS */
-.user-tracking-input{
-    display:none;
-}
-
 .user-tracking-input .user-measurements{
     display:none;
 }
