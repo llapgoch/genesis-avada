@@ -1144,3 +1144,8 @@ only screen and (min-device-pixel-ratio: 2) {
 #login{
     width: auto !important;
 }
+
+/* BBPRess */
+.form-allowed-tags{
+    display: none;
+}
