@@ -1149,3 +1149,7 @@ only screen and (min-device-pixel-ratio: 2) {
 .form-allowed-tags{
     display: none;
 }
+
+#bbpress-forums .status-closed, #bbpress-forums .status-closed a{
+    color: #ababab;
+}
