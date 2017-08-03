@@ -1153,3 +1153,7 @@ only screen and (min-device-pixel-ratio: 2) {
 #bbpress-forums .status-closed, #bbpress-forums .status-closed a{
     color: #ababab;
 }
+
+.bbp-body p{
+    color: #3e3e3e !important;
+}
