@@ -701,6 +701,25 @@ button.button{
     margin-right:auto;
 }
 
+@media (max-width: 399px) {
+    .msg-inner-container{
+        text-align: center;
+    }
+
+    .msg-inner-container li{
+        text-align: left;
+    }
+}
+
+@media (min-width: 400px) {
+    .msg-inner-container {
+        display: flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+    }
+}
+
 @media(max-width:800px){
     .alert{
         padding:10px;
@@ -715,6 +734,16 @@ button.button{
 	margin-bottom:20px;
 }
 
+.alert-achievement{
+    background-color: #fffdc5;
+    border-color: #dbe450;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.alert-inner-icon{
+    margin-right: 10px;
+}
 
 .genesis-progress-graph{
     width:100%;
@@ -1157,4 +1186,22 @@ only screen and (min-device-pixel-ratio: 2) {
 
 .bbp-body p{
     color: #3e3e3e !important;
+}
+
+/* Congratulations */
+
+.star-congratulations {
+    width: 7em;
+    height: 100%;
+    fill: orange;
+    animation: pulse 3s 5 ease-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
 }
