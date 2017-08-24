@@ -308,12 +308,12 @@ a.bright{
 
 .input-form .general-label{
 	display:block;
-	font-size:22px !important;
+	font-size:22px;
 	line-height:normal;
 	text-align:left;
 	margin-right:10px;
 	color:#333333;
-	font-family: "Karla", Arial, Helvetica, sans-serif !important;
+	font-family: "Karla", Arial, Helvetica, sans-serif;
 }
 
 
