@@ -1205,3 +1205,12 @@ only screen and (min-device-pixel-ratio: 2) {
         transform: scale(0.5);
     }
 }
+
+#physiotec_iframe {
+    overflow: hidden;
+    width: 971px;
+}
+
+#physiotec_iframe iframe{
+    margin-top: -142px;
+}
