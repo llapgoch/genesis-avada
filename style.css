@@ -11,6 +11,10 @@ strong{
     font-weight:700;
 }
 
+.u-underline{
+    text-decoration: underline;
+}
+
 .button-small, .button.small{
     font-size:11px;
 }
@@ -602,6 +606,10 @@ button.button{
 	border-left:none;
 	border-right:none;
 	border-bottom:none;
+}
+
+.inner-question-container .fusion-reading-box-container{
+    margin-bottom: 10px;
 }
 
 .record-food-container .general-input.food-input{
@@ -1204,4 +1212,13 @@ only screen and (min-device-pixel-ratio: 2) {
     50% {
         transform: scale(0.5);
     }
+}
+
+.button.red{
+    text-shadow: none !important;
+}
+
+.question-sep{
+    border: 1px dashed #cccccc;
+    margin-top:20px;
 }
