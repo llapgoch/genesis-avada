@@ -11,6 +11,10 @@ strong{
     font-weight:700;
 }
 
+.u-underline{
+    text-decoration: underline;
+}
+
 .button-small, .button.small{
     font-size:11px;
 }
@@ -604,6 +608,10 @@ button.button{
 	border-bottom:none;
 }
 
+.inner-question-container .fusion-reading-box-container{
+    margin-bottom: 10px;
+}
+
 .record-food-container .general-input.food-input{
     text-align:center;
     width:47px;
@@ -1143,4 +1151,45 @@ only screen and (min-device-pixel-ratio: 2) {
 /* Login page */
 #login{
     width: auto !important;
+}
+
+/* BBPRess */
+.form-allowed-tags{
+    display: none;
+}
+
+#bbpress-forums .status-closed, #bbpress-forums .status-closed a{
+    color: #ababab;
+}
+
+.bbp-body p{
+    color: #3e3e3e !important;
+}
+
+/* Congratulations */
+
+.star-congratulations {
+    width: 7em;
+    height: 100%;
+    fill: orange;
+    animation: pulse 3s 5 ease-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+}
+
+.button.red{
+    text-shadow: none !important;
+}
+
+.question-sep{
+    border: 1px dashed #cccccc;
+    margin-top:20px;
+
 }
