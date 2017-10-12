@@ -11,6 +11,10 @@ strong{
     font-weight:700;
 }
 
+.u-underline{
+    text-decoration: underline;
+}
+
 .button-small, .button.small{
     font-size:11px;
 }
@@ -602,6 +606,10 @@ button.button{
 	border-left:none;
 	border-right:none;
 	border-bottom:none;
+}
+
+.inner-question-container .fusion-reading-box-container{
+    margin-bottom: 10px;
 }
 
 .record-food-container .general-input.food-input{
@@ -1211,6 +1219,15 @@ only screen and (min-device-pixel-ratio: 2) {
     width: 971px;
 }
 
-#physiotec_iframe iframe{
+#physiotec_iframe iframe {
     margin-top: -142px;
+}
+
+.button.red{
+    text-shadow: none !important;
+}
+
+.question-sep{
+    border: 1px dashed #cccccc;
+    margin-top:20px;
 }
