@@ -510,11 +510,11 @@ input.smaller{
         float:left;
         margin-bottom:20px;
     }
-    
+
     .diet-days ul li:nth-child(2n+1){
         clear:left;
     }
-    
+
     .diet-days ul{
         text-align:left;
     }
@@ -585,7 +585,7 @@ button.button{
 }
 
 @media(max-width:830px){
-    
+
     .msg button.button + button.button,
     .msg a.button + a.button{
         margin-top:10px;
@@ -674,24 +674,24 @@ button.button{
         width:auto;
         border:none;
     }
-    
+
     .totals .food-input-form .input-box p,
     .targets .food-input-form .input-box p{
         display:inline-block;
     }
-    
-    .food-input-form .input-box > label, 
+
+    .food-input-form .input-box > label,
     .food-totals .total-label{
         min-width:90px;
         display:inline-block;
     }
-    
+
     .food-input-form .food-totals .number.general-input{
         display:inline-block;
         border:1px dotted #E67FB9;
         color:#ACACAC;
     }
-    
+
     .record-food-container .general-input{
         width:100px;
         display:inline-block;
@@ -876,15 +876,15 @@ button.button{
 	.input-form label{
 		margin-bottom:5px;
 	}
-    
+
     .progress-graph-switcher .button-container{
         text-align:center;
     }
-    
+
     .progress-graph-switcher .button-group{
         width:52%;
     }
-    
+
     .progress-graph-switcher .button-group{
         display:inline-block;
         margin-left:0;
@@ -893,7 +893,7 @@ button.button{
         margin-top:30px;
         width:75%;
     }
-    
+
     .progress-graph-switcher .button-group:first-child{
         margin-top:0;
     }
@@ -906,8 +906,8 @@ button.button{
          display:block;
          width:100%;
      }
-     
-     
+
+
      .progress-graph-switcher .extended-button{
          display:block;
      }
@@ -1001,7 +1001,7 @@ button.button{
 }
 
 
-#main .success-complete, 
+#main .success-complete,
 #main .success-complete h2{
 	font-size:22px;
 	text-align:center;
@@ -1092,7 +1092,7 @@ only screen and (min-device-pixel-ratio: 2) {
         background:url(images/login-logo@2x.png) no-repeat;
         background-size:100%;
     }
-    
+
 }
 
 /* To remove the sep line */
@@ -1212,6 +1212,15 @@ only screen and (min-device-pixel-ratio: 2) {
     50% {
         transform: scale(0.5);
     }
+}
+
+#physiotec_iframe {
+    overflow: hidden;
+    width: 971px;
+}
+
+#physiotec_iframe iframe {
+    margin-top: -142px;
 }
 
 .button.red{
