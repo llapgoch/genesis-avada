@@ -58,9 +58,9 @@ function extra_nav_menu_items( $items, $args ) {
 
 	if(is_user_logged_in()){
 		
-		$items .= '<li id="menu-item-logout" class="menu-item menu-item-logout"><a href="'.wp_logout_url('/').'">'.__('Log Out').'</a></li>';
+		$items .= '<li id="menu-item-logout" class="menu-item only-surveys menu-item-logout"><a href="'.wp_logout_url('/').'">'.__('Log Out').'</a></li>';
 	}else{
-	    $items .= '<li id="menu-item-logout" class="menu-item menu-item-login"><a href="'.wp_login_url('/').'">'.__('Log In').'</a></li>';
+	    $items .= '<li id="menu-item-logout" class="menu-item only-surveys menu-item-login"><a href="'.wp_login_url('/').'">'.__('Log In').'</a></li>';
 	}
 	return $items;
 }
